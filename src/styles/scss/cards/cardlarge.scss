@@ -1,0 +1,84 @@
+.card-container{
+    @extend %fullspace;
+    display: grid;
+    grid-template-rows: 20% 50% 1fr;
+    grid-template-columns: 1fr;
+    .section-top{
+        grid-row: 1/2;
+        grid-column: 1/2;
+        background-color: $color-body;
+        display: flex;
+        justify-content: end;
+        .section-top-arrow{
+            width: 4rem;
+            height: 4rem;
+            border: 1px solid black;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+        }
+    }
+    .section-center{
+        grid-row: 2/3;
+        grid-column: 1/2;
+        background-color: #26283D;
+        border-radius: 2rem;
+        padding: 1.5rem;
+        @media (max-width: 768px){
+            height: 50%;
+        }
+        .section-center-top{
+            width: 100%;
+            height: 50%;
+            background-color: #26283D;
+            display: flex;
+            justify-content: space-between;
+            img{
+                width: 5rem;
+                height: 5rem;
+                border-radius: 2rem;
+                @media (max-width: 768px){
+                    width: 4rem;
+                    height: 4rem;
+                    border-radius: 1rem;
+                }
+            }
+            .text{
+                color: #ffffff;
+                @media (max-width: 768px){
+                    font-size: 0.9rem;
+                }
+            }
+        }
+        .section-center-bottom{
+            width: 100%;
+            height: 50%;
+            background-color: #26283D;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            .title{
+                font-style: italic;
+                color: #ffffff;
+                @media (max-width: 768px){
+                    font-size: 0.85rem;
+                }
+            }
+            .subtitle{
+                font-size: 0.85rem;
+                color: #A1A2AC;
+                @media (max-width: 768px){
+                    font-size: 0.7rem;
+                }
+            }
+
+        }
+    }
+    .section-bottom{
+        grid-row: 3/4;
+        grid-column: 1/2;
+        background-color: $color-body;
+    }
+}

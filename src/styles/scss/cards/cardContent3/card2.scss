@@ -1,0 +1,94 @@
+.general-2 {
+
+    // background-color: aqua;
+    height: 92%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem;
+    .secction-1{
+        display: flex;
+        justify-content: center;
+        // background-color: red;
+        align-items: center;
+        height: 6rem;
+        .logo{
+            .img{
+                width: 8rem;
+            }
+        }
+    }
+    .secction-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // background-color: red;
+        align-items: center;
+        height: 10rem;
+
+        .titulos{
+            padding: 2rem;
+            .letra{
+                p{
+                    font-size: 2rem;
+                    font-weight: 300;
+                }
+
+            }
+        }
+
+        .parrafo{
+            font-size: small;
+            font-weight: 200;
+
+
+        }
+    }
+    .secction-3{
+        display: flex;
+        justify-content: space-between;
+        .galleria{
+            .imagenes{
+                background-image: url("/img/flamenco.jpg");
+                background-size: cover;
+                width: 4rem;
+                height: 5rem;
+                border-radius: 15px;
+                p{
+                    font-size: small;
+                font-weight: 800;
+                }
+            }
+        }
+        .galleria{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .imagenes{
+                background-image: url("/img/flamenco.jpg");
+                background-size: cover;
+                width: 4rem;
+                height: 5rem;
+                border-radius: 15px;
+                p{
+                    font-size: small;
+                }
+            }
+        }
+
+        .galleria{
+            .imagenes{
+                background-image: url("/img/flamenco.jpg");
+                background-size: cover;
+                width: 4rem;
+                height: 5rem;
+                border-radius: 15px;
+                p{
+                    font-weight: 800;
+                }
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,109 @@
+.card1{
+    display: flex;
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0% 38%);
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 2rem;
+    @extend %fullspace;
+    
+    .card1-item1{
+        display: flex;
+        justify-content: end;
+        padding: 2rem;
+        @media (max-width: 768px){
+            padding: 1rem;
+        }
+        @media (max-width: 640px){
+            padding: 1rem;
+        }
+        @media (max-width: 360px){
+            padding: 0.5rem;
+        }
+        .card1-icon{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        @media (max-width: 1024px){
+            width: 3.5rem;
+            height: 3.5rem;
+            font-size: 1.2rem;
+        }
+        @media (max-width: 768px){
+            width: 3rem;
+            height: 3rem;
+            font-size: 1rem;
+        }
+        @media (max-width: 640px){
+            width: 2.5rem;
+            height: 2.5rem;
+            font-size: 1rem;
+        }
+        @media (max-width: 360px){
+            width: 2rem;
+            height: 2rem;
+            font-size: 0.7rem;
+        }
+    }
+    }
+    .card1-item2{
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+        @media (max-width: 768px){
+            padding: 1rem;
+        }
+        @media (max-width: 640px){
+            padding: 0.5rem;
+        }
+        @media (max-width: 360px){
+            padding: 0.3rem;
+        }
+        h2{
+            font-size: 1.3rem;
+            @media (max-width: 1024px){
+                font-size: 1.5rem;
+            }
+            @media (max-width: 768px){
+                font-size: 1.3rem;
+                padding: 1rem;
+            }
+            @media (max-width: 640px){
+                font-size: 1rem;
+                padding: 1rem;
+                padding: 0.5rem;
+            }
+            @media (max-width: 360px){
+                font-size: 0.7rem;
+                padding: 0.3rem;
+            }
+        }
+    }
+    .card1-item3{
+        padding: 2rem;
+        @media (max-width: 768px){
+            padding: 1rem;
+        }
+        @media (max-width: 640px){
+            padding: 1rem;
+        }
+        @media (max-width: 360px){
+            padding: 0.3rem;
+        }
+        .card1-button{
+            display: flex;
+            justify-content: space-between;
+            @media (max-width: 640px){
+                font-size: 1rem;
+            }
+            @media (max-width: 360px){
+                font-size: 0.7rem;
+            }
+        }
+    }
+}

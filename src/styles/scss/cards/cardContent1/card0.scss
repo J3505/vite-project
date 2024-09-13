@@ -1,0 +1,176 @@
+.card{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 300px;
+    width:  300px;
+    clip-path: polygon(25% 0%, 100% 0, 100% 100%, 0 100%, 0 30%);
+    padding: 0.5rem;
+    border-radius: 15px;
+
+    // display: flex;
+    // flex-direction: column;
+    // z-index: 1;
+
+    .circulo{
+        display: flex;
+        justify-content: end;
+
+        .icono{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            background-color: #f8f8f8;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            border:1px solid black ;
+        }
+
+    }
+    .parrafo{
+        p{
+            padding: 4.5rem 0.1rem 0.3rem  0.1rem;
+            font-size: 1.5rem;
+            line-height: 1.7rem;
+        }
+    }
+    .linea{
+        border: 1px solid #bbb8b8d2;
+
+    }
+    .palabras-tres{
+        display: flex;
+        padding: 1.5rem;
+        justify-content: space-between;
+
+        span{
+            font-size: medium;
+            font-weight: 500;
+            
+        }
+
+    }
+}
+@media  (max-width:635px) {
+    .card{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #fff;
+        height: 280px;
+        width:  300px;
+        clip-path: polygon(25% 0%, 100% 0, 100% 100%, 0 100%, 0 30%);
+        padding: 0.5rem;
+        border-radius: 15px;
+    
+        // display: flex;
+        // flex-direction: column;
+        // z-index: 1;
+    
+        .circulo{
+            display: flex;
+            justify-content: end;
+    
+            .icono{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                justify-items: center;
+                background-color: #f8f8f8;
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                border:1px solid black ;
+            }
+    
+        }
+        .parrafo{
+            p{
+                padding: 2.5rem 0.1rem 0.1rem  10px;
+                font-size: 16px;
+                line-height: 1.7rem;
+            }
+        }
+        .linea{
+            border: 1px solid #bbb8b8d2;
+    
+        }
+        .palabras-tres{
+            display: flex;
+            padding: 1rem;
+            justify-content: space-between;
+    
+            span{
+                font-size: 10px;
+                font-weight: 300;
+                
+            }
+    
+        }
+    }   
+}
+
+@media (max-width:390px) {
+    .card{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #fff;
+        height: 300px;
+        width:  150px;
+        clip-path: polygon(25% 0%, 100% 0, 100% 100%, 0 100%, 0 30%);
+        padding: 0.5rem;
+        border-radius: 15px;
+    
+        // display: flex;
+        // flex-direction: column;
+        // z-index: 1;
+    
+        .circulo{
+            display: flex;
+            justify-content: end;
+    
+            .icono{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                justify-items: center;
+                background-color: #f8f8f8;
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                border:1px solid black ;
+            }
+    
+        }
+        .parrafo{
+            p{
+                padding: 2.5rem 0.1rem 0.3rem  0.1rem;
+                font-size: 14px;
+                line-height: 1.7rem;
+            }
+        }
+        .linea{
+            border: 1px solid #bbb8b8d2;
+    
+        }
+        .palabras-tres{
+            display: flex;
+            padding: 8px;
+            justify-content: space-between;
+    
+            span{
+                font-size: small;
+                font-weight: 200;
+                
+            }
+    
+        }
+    }
+}

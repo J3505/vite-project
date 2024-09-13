@@ -1,0 +1,146 @@
+header{
+    // width: 100%;
+    height: 2.5rem;
+    // background-color: black;
+    .padre{
+        display: flex;
+        // position: relative;
+        justify-content: space-between;
+        // background-color: #f5c10a;
+        align-items: center;
+        justify-items: center;
+        padding: 0.5rem;
+        
+        .hijo1{
+            display: flex;
+            width: clamp(150px, 25%, 320px);
+            justify-content: space-between;
+            // background-color: red;
+            // transition: margin-left 5s;
+
+            &-titulo{
+                display: flex;
+                align-items: center;
+                p{
+                    // font-size: clamp(5px, 30px, 50px);
+                    // font-size: clamp(0.75rem, -2.1667rem + 11.6667vw, 2.9375rem);
+                    // font-size: clamp(0.75rem, -0.75rem + 6vw, 1.875rem);
+                    font-size: clamp(0.75rem, 0rem + 3vw, 1.3125rem);
+                    font-weight: 700;
+
+                }
+            }
+            &-horaLugar{
+                display: flex;
+                align-items: center;
+                p{
+                    font-size: clamp(0.7rem, 1vw, 11px);   
+                    font-weight: 900;
+                    // width: clamp(10, 19, 50px);
+                    padding: 0 0.1rem;
+                }
+            }
+        }
+        .hijo2{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: clamp(180px, 20%, 350px);
+
+            
+            .hijo2-Idioma{
+                display: flex;
+                background-color: #fff;
+                padding:  0 4px;
+                border-radius: 1rem;
+                justify-content: space-between;
+                align-items: center;
+                .a{
+                    padding: 0.2rem 0.4rem;
+                    background-color: aqua;
+                    margin: 0.2rem;
+                    border-radius: 40%;
+                    
+                    &:hover{
+                        background-color: #f1f1f1;
+                        cursor: pointer;
+                    }
+                }
+                .b{
+                    padding: 0.2rem 0.4rem;
+                    border-radius: 40%;
+                    &:hover{
+                        background-color: #f1f1f1;
+                        cursor: pointer;
+                    }
+                }
+                    
+            }
+            .hijo2-Iconos{
+                display: flex;
+                gap: 0.5rem;
+
+                
+                .iconos1 {
+
+                    display: flex;
+                    position: relative;;
+                    .circulo1{
+                        position: absolute;
+                        top: -15px;
+                        left: 7px;
+                        background-color: #f5c10a;
+                        width: 1rem;
+                        height: 1rem;
+                        border-radius: 50%;
+
+                        display: flex;
+                        font-size: 10px;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: 700;
+
+
+                    }
+
+                }
+                .iconos2{
+                    display: flex;
+                    position: relative;
+                    .icono2{
+                        position: absolute;
+                        top: -15px;
+                        left: 7px;
+                        background-color: #f5c10a;
+                        width: 1rem;
+                        height: 1rem;
+                        border-radius: 50%;
+                        display: flex;
+                        font-size: 10px;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: 700;
+                    }
+                }
+            }
+            .hijo2-User{
+                display: flex;
+                // padding: auto;
+                align-items: center;
+                border-radius: 2rem;
+                padding: 0.1rem 0.2rem;
+
+                border:solid 1px rgb(209, 200, 200);
+                img{
+                    
+                    width: clamp( 0.8rem, 10%, 5rem);
+                }
+
+                .fotoUser{
+                    width:  clamp(1.7rem, 1vw, 2rem);
+                    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.card3{
+    height: auto;
+    display: grid;
+    @extend %fancy;
+    grid-template-rows: 1fr 1fr;
+    .card3-item1{
+        display: grid;
+        grid-template-columns: 87% 13%;
+        .card3-label{
+            background-color: #ffffff;
+            font-size: 2.5rem;
+            @media (max-width: 1024px){
+                font-size: 2rem;
+            }
+        }
+        .card3-en{
+            background-color: #ffffff;
+            .card3-container{
+                font-size: 1rem;
+                padding: 0.2rem;
+                background-color: #f0f0f0;
+                border-radius: 2rem;
+                display: flex;
+                justify-content: space-between;
+                @media (max-width: 1024px){
+                    font-size: 0.4rem;
+                }
+                .card3-part1{
+                    background-color: #ffffff;
+                    border-radius: 2rem;
+                    padding: 0.5rem;
+                    @media (max-width: 1024px){
+                        font-size: 0.6rem;
+                        padding: 0.2rem;
+                    }
+                }
+                .card3-part2{
+                    padding: 0.5rem;
+                    @media (max-width: 1024px){
+                        font-size: 0.6rem;
+                        padding: 0.2rem;
+                    }
+                }
+                
+            }
+        }
+    }
+    .card3-item2{
+        display: grid;
+        grid-template-columns: 30% 45% 25%;
+        .card3-first{
+            font-size: 1rem;
+            display: flex;
+            align-items: end;
+        }
+        .card3-present{
+            font-size: 1rem;
+            display: flex;
+            align-items: end;
+        }
+        .card3-img{
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 2rem;
+            }
+        }
+    }
+
+}

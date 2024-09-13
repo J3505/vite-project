@@ -1,0 +1,34 @@
+.gmail-container {
+    @extend %fullspace;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.contend {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2rem;
+    padding: 0.2rem;
+    background-color: #f0f0f0;
+    @media (max-width: 768px){
+        width: 100%;
+    }
+    .left{
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    }
+    .right{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        background-color: black;
+        color: white;
+    }
+}

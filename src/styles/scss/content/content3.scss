@@ -1,0 +1,27 @@
+.container-content3{
+    height: 50rem;
+    display: grid;
+    grid-template-columns: 50% 50% ;
+
+
+    .item:nth-child(1){
+        @media (max-width:1200px){
+            grid-column: 1/-1;
+
+            
+        }
+        
+    }
+    .item:nth-child(2){
+        @media (max-width:1200px){
+            grid-column: 1/-1;
+
+            
+        }
+        
+    }
+}
+  
+  
+  
+  
